@@ -1,0 +1,22 @@
+{
+    "name": "docs.agiquery.com",
+    "version": "1.0.0",
+    "private": true,
+    "description": "agile-query",
+    "author": "yeongher",
+    "keywords": [
+        "agiquery"
+    ],
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "next": "^15.1.1",
+        "nextra": "^3.2.5",
+        "nextra-theme-docs": "^3.2.5",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    }
+}
