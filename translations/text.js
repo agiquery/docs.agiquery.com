@@ -125,6 +125,7 @@ export const searchPlaceholderMap = {
 
 /** @type {Readonly<Record<Locale, string>>} */
 export const gitTimestampMap = {
+  "zh-CN": "最后更新于",
   "en-US": "Last updated on",
   "fr-FR": "Dernière mise à jour le",
   ru: "Последнее обновление",

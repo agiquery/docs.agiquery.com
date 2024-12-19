@@ -22,7 +22,6 @@ export default function useLocalesMap(localesMap) {
 
   if (!localesMap.hasOwnProperty(defaultLocale)) {
     throw new Error(
-      console.log(localesMap)
       `Locales map must contain default locale "${defaultLocale}"`
     );
   }
