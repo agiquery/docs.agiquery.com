@@ -105,6 +105,7 @@ export const footerTextMap = {
 
 /** @type {Readonly<Record<Locale, string>>} */
 export const tableOfContentsTitleMap = {
+  "zh-CN": "导航",
   "en-US": "On This Page",
   "es-ES": "En esta página",
   "fr-FR": "Sur cette page",

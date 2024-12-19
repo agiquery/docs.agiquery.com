@@ -11,9 +11,16 @@ import {
 } from "./translations/text";
 import { useRouter } from "next/router";
 import useLocalesMap from "./components/use-locales-map";
+import styled from "styled-components";
 
 export default {
-    logo: <span>Agile Query | Docs</span>,
+    logo: () => {
+        return (
+            <>
+                <Logo />
+            </>
+        );
+    },
     project: {
         link: 'https://github.com/shuding/nextra'
     },
@@ -52,3 +59,12 @@ export default {
         text,
     })),
 }
+
+const Logo = styled.div`
+    background: url(/logo.svg);
+    background-size: 100%; 
+    height: 64px;
+    width: 200px; 
+    background-repeat: no-repeat;
+    background-position: 50%;
+`
