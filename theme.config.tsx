@@ -9,15 +9,18 @@ import {
     tableOfContentsTitleMap,
     titleMap,
 } from "./translations/text";
+import { useTheme } from 'nextra-theme-docs'
 import { useRouter } from "next/router";
 import useLocalesMap from "./components/use-locales-map";
 import styled from "styled-components";
 
 export default {
     logo: () => {
+        const { resolvedTheme } = useTheme()
+        const logoImage = (resolvedTheme && resolvedTheme == 'light') ? '/logo.svg' : '/logo-dark.svg'
         return (
             <>
-                <Logo />
+                <Logo style={{backgroundImage: `url(${logoImage})`}} />
             </>
         );
     },
