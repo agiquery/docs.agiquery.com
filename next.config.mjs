@@ -15,5 +15,8 @@ export default withNextra({
         locales: ["en-US", "zh-CN"],
         defaultLocale: "zh-CN",
     },
+    images: {
+        unoptimized: true,
+    },
     reactStrictMode: true,
 })

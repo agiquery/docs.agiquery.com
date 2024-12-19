@@ -5,12 +5,12 @@
     "description": "agile-query",
     "author": "yeongher",
     "keywords": [
-        "agiquery"
+        "agiquery", "adhoc"
     ],
     "scripts": {
         "dev": "next",
-        "build": "next build",
-        "start": "next start"
+        "build": "next build && next export -o dist/",
+        "start": "NEXT_MANUAL_SIG_HANDLE=true next start"
     },
     "dependencies": {
         "focus-visible": "^5.2.0",
