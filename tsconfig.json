@@ -24,7 +24,7 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/_app.jsx"
-  ],
+, "pages/_meta.en-US.js"  ],
   "exclude": [
     "node_modules"
   ]

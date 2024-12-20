@@ -98,7 +98,6 @@ export default {
                 <meta property="og:description" content={ogDescription} />
                 <meta property="og:image" content={ogImage} />
                 <meta property="og:locale" content={locale} />
-                <title>{title} - Agile Query</title>
                 {locales
                     .filter((l) => l !== locale)
                     .map((l) => (
