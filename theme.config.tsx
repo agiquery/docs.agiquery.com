@@ -17,11 +17,13 @@ import styled from "styled-components";
 export default {
     logo: () => {
         const { resolvedTheme } = useTheme()
-        const logoImage = (resolvedTheme && resolvedTheme == 'light') ? '/logo.svg' : '/logo-dark.svg'
+        const router = useRouter();
+        const { locale, defaultLocale } = router;
+        const logoImage = (resolvedTheme && resolvedTheme == 'dark') ? '/logo-dark.svg' : '/logo.svg'
         return (
-            <>
-                <Logo style={{backgroundImage: `url(${logoImage})`}} />
-            </>
+            <LogoContainer>
+                <Logo style={{ backgroundImage: `url(${logoImage})` }} /> <h3>| 文档</h3>
+            </LogoContainer>
         );
     },
     project: {
@@ -62,6 +64,15 @@ export default {
         text,
     })),
 }
+
+const LogoContainer = styled.div`
+    display: flex;
+    align-items: center;
+
+    h3 {
+        font-size: 16px;
+    }
+`
 
 const Logo = styled.div`
     background: url(/logo.svg);
