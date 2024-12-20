@@ -27,8 +27,9 @@ export default {
         );
     },
     project: {
-        link: 'https://github.com/shuding/nextra'
+        link: 'https://github.com/agiquery/docs.agiquery.com'
     },
+    docsRepositoryBase: "https://github.com/agiquery/docs.agiquery.com/blob/main",
     toc: {
         float: true,
         title: () => useLocalesMap(tableOfContentsTitleMap),
