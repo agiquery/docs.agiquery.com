@@ -63,7 +63,6 @@ export default {
 
         return (
             <>
-                {/* Favicons, meta */}
                 <link
                     rel="apple-touch-icon"
                     sizes="180x180"
@@ -99,6 +98,7 @@ export default {
                 <meta property="og:description" content={ogDescription} />
                 <meta property="og:image" content={ogImage} />
                 <meta property="og:locale" content={locale} />
+                <title>{title} - Agile Query</title>
                 {locales
                     .filter((l) => l !== locale)
                     .map((l) => (
@@ -143,7 +143,7 @@ const Logo = styled.div`
     background: url(/logo.svg);
     background-size: 100%; 
     height: 64px;
-    width: 200px; 
+    width: 168px; 
     background-repeat: no-repeat;
     background-position: 50%;
 `
