@@ -1,5 +1,0 @@
-module.exports = {
-    "index": "简介",
-    "quick-start": "快速开始",
-    "install": "安装部署"
-}
