@@ -1,7 +1,6 @@
 //@ts-check
 
 import nextra from 'nextra';
-import i18n from './i18n-config.js';
 
 const withNextra = nextra({
   theme: 'nextra-theme-docs',
@@ -10,11 +9,13 @@ const withNextra = nextra({
 })
 
 export default withNextra({
-  i18n,
+  i18n: {
+    locales: ["en-US", "zh-CN"],
+    defaultLocale: "zh-CN",
+  },
   images: {
     unoptimized: true,
   },
-  reactStrictMode: true,
   trailingSlash: true,
   output: "export"
 })

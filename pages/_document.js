@@ -5,10 +5,6 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta charSet="utf-8" />
-        <link rel="icon" href="/icon?<generated>" />
-        <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/favicon.svg" />
-
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-F0FE9EJZ4E"
